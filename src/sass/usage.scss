@@ -1,5 +1,12 @@
+$yellow: #F2CF7E;
+$light-yellow: #F9F5E6;
+$light-black: #2A2A38;
+$black: #000;
+$white: #FFFFFF;
+$beige: #E5E0CD;
+
 .slide_4 {
-  background-color: #F9F5E6;
+  background-color: $light-yellow;
   margin: 0 auto;
   width: 100%;
 }
@@ -49,7 +56,7 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
-    color: #2A2A38;
+    color: $light-black;
   }
 }
 
@@ -64,8 +71,8 @@
 .separator {
   width: 1px;
   height: 500px;
-  border: 1px solid #E5E0CD;
-  background-color: #E5E0CD;
+  border: 1px solid $beige;
+  background-color: $beige;
   margin-top: 100px;
 }
 
@@ -81,14 +88,14 @@
     font-family: Poppins, sans-serif;
     font-weight: 400;
     font-size: 16px;
-    line-height: 20px;
+    line-height: 24px;
   }
 }
 
 .choice_button {
   width: 173px;
   height: 52px;
-  background: #F2CF7E;
+  background: $yellow;
   border-radius: 50px;
   border: none;
   font-weight: 600;
@@ -98,34 +105,42 @@
 }
 
 .choice_button:hover {
-  box-shadow:0 0 5px black;
+  box-shadow:0 0 5px $black;
+  cursor: pointer;
+}
+
+.scroll {
   cursor: pointer;
 }
 
 .usage_icon {
   &__1:hover {
+    cursor: pointer;
     animation: rubberBand 0.6s ease;
   }
 
   &__2:hover {
+    cursor: pointer;
     animation: rubberBand 0.6s ease;
   }
 
-  &__3:hover {
+  &__3:hover {  cursor: pointer;
     animation: rubberBand 0.6s ease;
   }
 
   &__4:hover {
+    cursor: pointer;
     animation: rubberBand 0.6s ease;
   }
 }
-  @keyframes rubberBand {
+
+@keyframes rubberBand {
     0% {transform: scale(1);}
-    30% {transform: scaleX(1.15) scaleY(0.75);}
+    30% {transform: scaleX(1) scaleY(0.75);}
     40% {transform: scaleX(0.75) scaleY(1.25);}
-    60% {transform: scaleX(1.15) scaleY(0.85);}
+    60% {transform: scaleX(1) scaleY(0.85);}
     100% {transform: scale(1);}
-  }
+}
 
 
   @media (max-width: 1062px) {
@@ -135,7 +150,6 @@
   }
 
   @media (max-width: 830px) {
-
     .usage__title {
       padding-bottom: 50px;
     }
@@ -211,7 +225,6 @@
     }
 
     .usage__item {
-
       &__text {
         font-size: 10px;
         line-height: 16px;
@@ -219,7 +232,6 @@
     }
 
     .choice_group {
-
       &__pic {
         margin-left: 15px;
       }
@@ -333,7 +345,7 @@
         font-weight: 400;
         font-size: 14px;
         line-height: 24px;
-        color: #2A2A38;
+        color: $light-black;
       }
     }
 
@@ -342,6 +354,7 @@
         max-width: 184px;
         margin-right: 70px;
       }
+
       &__pic2 {
         display: flex;
         flex-direction: column;
@@ -363,7 +376,7 @@
     .line {
       width: 258px;
       height: 0;
-      border: 1px solid #E5E0CD;
+      border: 1px solid $beige;
       margin-top: 46px;
     }
 
@@ -396,11 +409,11 @@
     .choice_button {
       width: 283px;
       height: 46px;
-      background: #F2CF7E;
+      background: $yellow;
       font-weight: 600;
       font-size: 14px;
       line-height: 18px;
-      color: white;
+      color: $white;
       margin: 10px 0 50px 0;
     }
 

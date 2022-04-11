@@ -1,3 +1,11 @@
+$yellow: #F2CF7E;
+$dark-purple: #2B146C;
+$gray: #7F7F88;
+$light-black: #2A2A38;
+$galactic: #3B2186;
+$black: #000;
+$white: #FFFFFF;
+
 .slide_3 {
   margin: 0 auto;
   width: 100%;
@@ -16,7 +24,7 @@
     font-weight: 700;
     font-size: 36px;
     line-height: 52px;
-    color: #2A2A38;
+    color: $light-black;
     padding-top: 75px;
     padding-bottom: 20px;
   }
@@ -60,7 +68,7 @@
     font-weight: 700;
     font-size: 36px;
     line-height: 52px;
-    color: #2A2A38;
+    color: $light-black;
     padding-bottom: 24px;
   }
 
@@ -69,12 +77,12 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
-    color: #7F7F88;
+    color: $gray;
   }
 
-  &__button {
+    &__button {
     width: 173px;
-    height: 52px;background: #3B2186;
+    height: 52px;background: $galactic;
     border-radius: 50px;
     border: none;
     margin-top: 52px;
@@ -96,6 +104,14 @@
   }
 }
 
+#first {
+  width: 80%;
+}
+
+#second {
+  width: 95%;
+}
+
 .video__image:hover {
   cursor: pointer;
 }
@@ -114,6 +130,10 @@
     &__pic2 {
       width: 50%;
     }
+  }
+
+  #first {
+    width: 90%;
   }
 }
 
@@ -137,7 +157,7 @@
   .videoblock__text {
     &__title {
       font-size: 24px;
-      line-height: 40px;
+      line-height: 36px;
     }
 
     &__subtitle {
@@ -211,7 +231,6 @@
     }
   }
 }
-
 
 @media (max-width: 644px) {
   .video {
@@ -300,7 +319,7 @@
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    background: #2B146C;
+    background: $dark-purple;
   }
 
   .video_mobile__text {
@@ -313,7 +332,7 @@
       font-weight: 400;
       font-size: 12px;
       line-height: 32px;
-      color: #F2CF7E;
+      color: $yellow;
       letter-spacing: 0.16em;
     }
 
@@ -322,7 +341,7 @@
       font-weight: 700;
       font-size: 18px;
       line-height: 24px;
-      color: #FFFFFF;
+      color: $white;
       padding-top: 10px;
     }
 
@@ -331,12 +350,12 @@
       font-weight: 400;
       font-size: 12px;
       line-height: 20px;
-      color: #FFFFFF;
+      color: $white;
       padding-top: 15px;
     }
   }
   .now {
-    color: #F2CF7E;
+    color: $yellow;
   }
 
   .video_btn {
@@ -386,6 +405,6 @@
 
   .video_btn:hover {
     cursor: pointer;
-    box-shadow: 0 0 5px #000;
+    box-shadow: 0 0 5px $black;
   }
 }
