@@ -106,7 +106,7 @@ footer {
 }
 
 .contact_item {
-  width: 274px;
+  width: 298px;
   height: 48px;
   background: $galactic;
   border-radius: 100px;
@@ -148,6 +148,10 @@ input {
 .contact_button:hover {
   box-shadow:0 0 5px white;
   cursor: pointer;
+}
+
+.contact_button:focus {
+  outline: none;
 }
 
 .footer__privacy {
@@ -240,7 +244,7 @@ input {
   }
 
   .contact_button {
-    width: 258px;
+    width: 234px;
     height: 44px;
     font-size: 14px;
   }
@@ -306,14 +310,14 @@ input {
   }
 
   .contact_item {
-    width: 164px;
+    width: 184px;
     height: 40px;
     font-size: 12px;
     margin-bottom: 10px;
   }
 
   .contact_button {
-    width: 188px;
+    width: 184px;
     height: 40px;
     font-size: 12px;
   }
@@ -350,14 +354,14 @@ input {
   }
 
   .contact_item {
-    width: 114px;
+    width: 155px;
     height:35px;
     font-size: 11px;
     margin-bottom: 10px;
   }
 
   .contact_button {
-    width: 138px;
+    width: 155px;
     height: 35px;
     font-size: 11px;
   }
@@ -427,7 +431,7 @@ input {
   }
 
   .contact_item {
-    width: 94px;
+    width: 118px;
     height: 30px;
     font-size: 10px;
     margin-bottom: 10px;
@@ -501,8 +505,8 @@ input {
       margin: 0 auto;
 
       &__email {
-        width: 258px;
-        height: 40px;
+        width: 288px;
+        height: 46px;
         margin-bottom: 16px;
         border-radius: 50px;
         background-color: $dark-purple;
@@ -567,6 +571,7 @@ input {
       display: flex;
       flex-direction: column;
       justify-content: space-around;
+      align-items: center;
     }
   }
 
@@ -582,7 +587,7 @@ input {
   }
 
   .contact_item {
-    width: 258px;
+    width: 288px;
     height: 46px;
     background: $dark-purple;
     border-radius: 100px;
@@ -599,7 +604,7 @@ input {
   }
 
   .contact_button {
-    width: 280px;
+    width: 288px;
     height: 46px;
     background: $yellow;
     border: none;
@@ -620,6 +625,10 @@ input {
   .subscription__form__button:hover {
     cursor: pointer;
     box-shadow:0 0 5px white;
+  }
+
+  .subscription__form__button:focus {
+    outline: none;
   }
 
   .footer__networks__item::before {

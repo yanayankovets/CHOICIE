@@ -121,6 +121,10 @@ $white: #FFFFFF;
   cursor: pointer;
 }
 
+.videoblock__text__button:focus {
+  outline:none;
+}
+
 @media (max-width: 1062px) {
   .videoblock__text {
     &__pic1 {
@@ -395,7 +399,7 @@ $white: #FFFFFF;
     }
 
     &__button {
-      width: 289px;
+      width: 288px;
       height: 46px;
       font-size: 14px;
       margin-top: 30px;
@@ -406,5 +410,9 @@ $white: #FFFFFF;
   .video_btn:hover {
     cursor: pointer;
     box-shadow: 0 0 5px $black;
+  }
+
+  .video_btn:focus {
+    outline: none;
   }
 }
